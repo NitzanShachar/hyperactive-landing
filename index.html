@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.js"></script>
+    <script type="text/javascript" src="./node_modules/fullpage.js/dist/jquery.fullpage.js"></script>
+    <script type="text/javascript" src="./node_modules/fullpage.js/dist/jquery.fullpage.extensions.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./node_modules/fullpage.js/dist/jquery.fullpage.css" />
+    <script src="app.min.js"></script>
+    <link rel="stylesheet" href="/styles/CSS/styles.css">
+    <link rel="shortcut icon" type="image/png" href="./imgs/favicon.ico"/>
+    <title>מתעניין בלימודי הנדסת תכנה?</title>
+</head>
+<body ng-app="LandingPage">
+    <div id="fullpage">
+        <div class="section" data-anchor="Intro">
+            <div class="changing-colors"></div>
+            <div class="bg-collage"></div>
+            <header></header>
+            <a href="#About" class="down-arrow"> &#187; </a>
+        </div>
+        <div class="section" data-anchor="About">
+            <div class="changing-colors"></div>
+            <div class="bg-gif"></div>
+            <about></about>
+            <partners></partners>
+            <a href="#Compare" class="down-arrow"> &#187; </a>
+        </div>
+        <div class="section" data-anchor="Compare">
+            <div class="changing-colors"></div>
+            <div class="bg-gif"></div>
+            <comparison></comparison>
+            <!--<a href="#Register" class="down-arrow"> &#187; </a>-->
+        </div>
+        <!--<div class="section" data-anchor="Register">
+            <div class="changing-colors"></div>
+            <div class="bg-gif"></div>
+        </div>-->
+    </div>
+    <registration></registration>
+    <script>
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                    scrollingSpeed: 1000,
+                    fitToSection: true,
+                    autoScrolling: true
+                });
+            });
+    </script>
+</body>
+</html>

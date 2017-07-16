@@ -1,0 +1,1 @@
+var Land = angular.module('LandingPage', []);
