@@ -1,0 +1,30 @@
+.info-card{
+    z-index: 11;
+    position: relative;
+    margin: 1vw;
+    display: flex;
+    flex-direction: column;
+    height: 25vw;
+    width: 22vw;
+    align-content: space-between;
+    align-items: stretch;
+    justify-content: space-between;
+    p{
+        @include font(1.5vw, $navy-blue, 500);
+        background-color: rgba(255,255,255,0.6);
+        padding: 2vw;
+        height: 24vw;
+        align-self: stretch;
+    }
+    img{
+        z-index: 13;
+        height: 5vw;
+        width: auto;
+        align-self: center;
+        position: relative;
+        top: -6vw;
+        display: inline-block;
+        transform: translate(0px, 0px);
+        @include bounce(0s, 3s);
+    }
+}

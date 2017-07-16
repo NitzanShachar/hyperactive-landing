@@ -1,0 +1,33 @@
+
+.logos-cont{
+    z-index: 15;
+    display: flex;
+    width: 70vw;
+    margin: auto;
+    margin-top: -1vw;
+    padding: 1vw;
+    background-color: white;
+    box-shadow: $navy-blue 0.4vw 0.4vw 0.2vw;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.cust-logo{
+    max-width:4vw;
+    max-height:3vw;
+    width: 4vw;
+    height: auto;
+    position: relative;
+    flex: none;
+    align-self: auto;
+    margin: 1vw;
+}
+h2{
+    z-index: 12;
+    position: relative;
+    top: -2vw;
+    display: block;
+    @include font($M-fontsize, $dark-red, 800);
+    text-shadow: $navy-blue 0.1vw 0.1vw 0;
+    text-align: center;
+    margin: auto;
+    }

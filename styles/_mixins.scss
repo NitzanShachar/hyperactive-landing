@@ -1,0 +1,33 @@
+
+@mixin font($size, $color, $weight){
+    font-family: $MainFont;
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+}
+
+@mixin set-alpha($color, $opacity){
+    color: rgba($color, $opacity);
+}
+
+@mixin bounce($delay, $duration){
+    @keyframes bouncing {
+        0%{
+            transform: translate(0, 0);
+        }
+        25%{
+            transform: translate(0, -20px);
+        }
+        35%{
+            transform: translate(0, -20px);
+        }
+        50%{
+            transform: translate(0, 0);
+        }
+        100%{
+            transform: translate(0, 0);
+        }
+    }
+    animation: bouncing $duration infinite;
+    animation-delay: $delay;  
+}

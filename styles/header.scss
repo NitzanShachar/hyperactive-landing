@@ -1,0 +1,82 @@
+
+.headline{
+    background: white;
+    box-shadow: $navy-blue 0 -0.2vw 0;
+    border-bottom-left-radius: 2vw;
+    padding: 1vw;
+    margin: 1vw;
+    margin-right: 0;
+    position: relative;
+    top: 2vw;
+    z-index: 10;
+    width: 53vw;
+    span{
+        @include font($M-fontsize, $navy-blue, 700); 
+    }
+}
+.second{
+    @extend .headline;
+    width: 75vw;
+    span{
+    margin-right: 35vw;
+    }
+}
+.header-M{
+    position: relative;
+    float: left;
+    margin-left: 2vw;
+    z-index: 10;
+    text-shadow: $navy-blue 0.2vw 0.2vw 0;
+    @include font($XL-fontsize, $dark-red, 900);
+    
+    .dot1{
+        display: inline-block;
+        transform: translate(0px, 0px);
+        @include bounce(0.2s, 1.2s);
+    }
+    .dot2{
+        display: inline-block;
+        transform: translate(0px, 0px);
+        @include bounce(0.4s, 1.2s);
+    }
+    .dot3{
+        display: inline-block;
+        transform: translate(0px, 0px);
+        @include bounce(0.6s, 1.2s);
+    }
+}
+
+.header-S{
+    @extend .header-M;
+    font-size: 3vw;
+    align-self: center;
+}
+.list-box{
+    background-color: rgba(255,255,255,0.6);
+    z-index: 10;
+    position: relative;
+    padding: 1vw;
+    margin: auto;
+    width: 60vw;
+    p{
+        @include font($M-fontsize, $navy-blue, 500);
+        margin: 1vw;
+
+    }
+}
+.welcome{
+    @extend .changing-colors;
+    @include font(5vw, white, bolder);
+    z-index: 11;
+    position: absolute;
+    top: 80%;
+    align-content: center;
+    width: 100vw;
+    height: 20%;
+    padding-top: 2vw;
+    span{
+        position: relative;
+        margin-right: 4vw;
+        // margin-top: 2vw;
+    }
+}
